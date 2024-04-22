@@ -64,7 +64,6 @@ const ReciveData = () => {
     const userToSave = filteredData.find((user) => user.id === id);
     if (!userToSave) return;
 
-    // Extract only the fields that need to be updated
     const updatedUserData = {
       name: userToSave.name,
       dateOfBirth: userToSave.dateOfBirth,
@@ -87,7 +86,7 @@ const ReciveData = () => {
   const deleteUser = async (id) => {
     try {
       await axios.delete(`https://localhost:7216/User/${id}`);
-      fetchData(); // After deletion, update the data
+      fetchData(); 
     } catch (error) {
       console.error("Error deleting user:", error);
     }
