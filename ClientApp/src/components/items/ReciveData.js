@@ -78,7 +78,7 @@ const ReciveData = () => {
       updatedUserData
     );
 
-    fetchData(); // Refresh the data after saving
+    fetchData(); 
   } catch (error) {
     console.error("Error saving user data:", error);
   }
@@ -96,11 +96,8 @@ const ReciveData = () => {
   return (
     <div>
       <h1>User Data</h1>
-      {/* Filter input */}
       <input type="text" placeholder="Filter..." onChange={handleFilter} />
-      {/* User data table */}
       <table>
-        {/* Table headers */}
         <thead>
           <tr>
             <th onClick={() => handleSort("name")}>Name</th>
@@ -111,11 +108,9 @@ const ReciveData = () => {
             <th>Actions</th>
           </tr>
         </thead>
-        {/* Table body */}
         <tbody>
           {filteredData.map((user) => (
             <tr key={user.id}>
-              {/* Editable fields */}
               <td>
                 <input
                   type="text"
