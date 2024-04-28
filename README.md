@@ -1,5 +1,4 @@
-Також я створив програму, яка створює для мене файл.csv, щоб краще зрозуміти, як працює CsvHelper.
-
+//Також я створив програму, яка створює для мене файл.csv, щоб краще зрозуміти, як працює CsvHelper.
 using System;
 using System.Text;
 using System.Text.RegularExpressions;
